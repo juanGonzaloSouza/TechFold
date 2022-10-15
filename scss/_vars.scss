@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:wght@300&display=swap');
+
+$lightblue: rgb(57, 167, 167);
+$darkblue: rgb(3, 35, 64);
+$white: rgb(243, 243, 243);
+$white-5: rgba(243, 243, 243, .5);
+$black: rgb(1, 24, 38);
+$blue: rgb(5, 75, 136);
+$blue-9: rgba(3, 49, 89, .9);
+$blueviolet: rgb(121, 126, 246);
+$oceanblue: rgb(99, 229, 255);
+$font: Roboto, sans-serif;
+
+//Mixins
+
+@mixin flex( $disp, $justify, $align, $direction) {
+    display: $disp;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}

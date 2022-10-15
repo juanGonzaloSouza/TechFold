@@ -1,0 +1,90 @@
+
+.nav {
+    @include flex(flex, inherit, left, row );
+    z-index: 100;
+    background-color: $blue-9;
+    position: sticky;
+    top: 0;
+    padding: 10px 5px;
+    height: 80px;
+    margin-bottom: 2em;
+    .nav__img{
+        margin: auto;
+        margin-left: .5em;
+    }
+    a{
+        text-decoration: none;
+    }
+    p {
+        color: $white;
+        border-bottom: 1px solid $lightblue;
+        font-family: $font;
+        font-size: 2em;
+    }
+
+    input {
+        margin: 0 50%;
+        align-items: center;
+        width: 30px;
+        aspect-ratio: 1;
+        display: none;
+        appearance: none;
+        cursor: pointer;
+        display: grid;
+        z-index: 3;
+        opacity: .8;
+        &:before,
+        &:after {
+            content: "";
+            grid-area: 1/1;
+            transition: 1s;
+        }
+
+        &:before {
+            z-index: 2;
+            content: url(../src/icons/open-burger.svg);
+        }
+
+        &:after {
+            content: url(../src/icons/close-burger.svg);
+            opacity: 0;
+        }
+
+        &:checked:before {
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        &:checked:after {
+            transform: scale(1) translateZ(0) rotate(270deg);
+            opacity: 1;
+        }
+
+        &:checked+ul {
+            display: flex;
+            z-index: 2;
+
+        }
+    }
+
+    .nav__list {
+        @include flex(none, center, center, column );
+        list-style: none;
+        z-index: 100;
+        position: fixed;
+        background-color: $blue;
+        inset: 0 0 0;
+        padding: 40px;
+        margin: 0;
+        gap: 30px;
+
+        a {
+            text-decoration: none;
+            font-size: 2em;
+            color: $white;
+            border-bottom: 1px solid $lightblue;
+            font-weight: bold;
+            font-family: $font;
+        }
+    }
+}

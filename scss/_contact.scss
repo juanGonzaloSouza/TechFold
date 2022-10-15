@@ -1,0 +1,96 @@
+
+.contact {
+    color: #fff;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+
+    .contact__wrapper {
+        box-shadow: 2px 2px 10px 2px $lightblue;
+        border-radius: 15px;
+
+        &>* {
+            padding: 1em;
+        }
+
+        .contact__form {
+            background: $blue-9;
+
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                margin: 3em;
+
+
+                label {
+                    display: block;
+                    margin: auto;
+
+                }
+
+                p {
+                    margin: 0;
+                    padding: 1em;
+                }
+
+                .block {
+                    grid-column: 1 / 3;
+                }
+
+                button,
+                input,
+                textarea {
+                    width: 100%;
+                    padding: .7em;
+                    border: none;
+                    background: none;
+                    outline: 0;
+                    color: #fff;
+                    border-bottom: 1px solid $blueviolet;
+                }
+
+                button {
+                    cursor: pointer;
+                    background: $oceanblue;
+                    border: 0;
+                    text-transform: uppercase;
+                    padding: 1em;
+
+                    &:focus,
+                    &:hover {
+                        background: $white-5;
+                        color: #fff;
+                        transition: background-color 1s ease-out;
+                        outline: 0;
+                    }
+
+                    :focus {
+                        background: $white-5;
+                        color: #fff;
+                        transition: background-color 1s ease-out;
+                        outline: 0;
+                    }
+                }
+            }
+        }
+
+        .contact__info {
+            background: $black;
+
+            ul {
+                list-style: none;
+            }
+
+            h4,
+            ul,
+            p {
+                text-align: center;
+                margin: 0 0 1rem 0;
+
+            }
+        }
+    }
+}

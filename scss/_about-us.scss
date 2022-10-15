@@ -1,0 +1,17 @@
+
+.about article {
+    @include flex(flex, center, center, column );
+    margin: 1em .8em;
+    .about__img {
+        width: 330px;
+        height: 250px;
+        border-radius: 10px;
+        border: 1px solid gray;
+        margin: 1em 1em;
+        box-shadow: -2px -2px 34px -4px rgba(0, 0, 0, 0.67);
+    }
+    .about__text {
+        font-size: 1.5em;
+        margin: 1em .5em;
+    }
+}

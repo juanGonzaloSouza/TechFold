@@ -1,0 +1,74 @@
+
+.footer {
+    margin-top: 3em;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $blue;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    bottom: 0;
+    position: sticky;
+    width: 100%;
+
+    .footer__terms {
+        display: flex;
+        flex-direction: column;
+
+        span {
+
+            font-family: $font;
+            line-height: 54px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #ffffff;
+            margin: 0 1.5em;
+        }
+    }
+
+    .footer__socialmedia {
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        flex-direction: column;
+
+        .buttonsocialmedia {
+            -webkit-tap-highlight-color: transparent;
+            border-radius: 50%;
+            background-color: transparent;
+            border: none;
+            outline: none;
+
+            a {
+                text-decoration: transparent;
+
+                #mail__icn {
+                    margin: auto;
+                    outline: transparent;
+                    display: inline-block;
+                    padding: 0.5em;
+                    color: #ffffff;
+                    cursor: pointer;
+                    transition: background-color 0.7s;
+                    transition-timing-function: ease-in-out;
+                    font-size: 2em;
+                    border-radius: 50%;
+                }
+
+                #telegram__icn {
+                    margin: auto;
+                    outline: transparent;
+                    display: inline-block;
+                    padding: 0.5em;
+                    color: #ffffff;
+                    cursor: pointer;
+                    transition: background-color 0.7s;
+                    transition-timing-function: ease-in-out;
+                    font-size: 2em;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+    }
+}
